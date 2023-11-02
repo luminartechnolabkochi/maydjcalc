@@ -21,8 +21,11 @@ urlpatterns = [
     path("helloworld/",views.HelloWorldView.as_view()),
     path("morning/",views.GoodMorningView.as_view()),
     path("afternoon/",views.GoodAfternoonView.as_view()),
-    path("add/",views.AdditionView.as_view()),
-    path("fact/",views.FactorialView.as_view())
+    path("add/",views.AdditionView.as_view(),name="addition"),
+    path("fact/",views.FactorialView.as_view(),name="factorial"),
+    path("",views.IndexView.as_view()),
+    path("leapyear/",views.LeapYearView.as_view(),name="leapyear"),
+    path("emi/",views.EmiView.as_view(),name="emi")
    
     
 ]
